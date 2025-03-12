@@ -16,10 +16,6 @@ class HomeScreen extends StatelessWidget {
           Container(
             decoration: const BoxDecoration(
               color: Colors.black,
-              image: DecorationImage(
-                image: AssetImage('assets/images/stars_bg.png'),
-                fit: BoxFit.cover,
-              ),
             ),
           ),
           
@@ -39,42 +35,19 @@ class HomeScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      // Decorative circle
-                      Align(
-                        alignment: Alignment.topCenter,
-                        child: Container(
-                          width: 60,
-                          height: 60,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white.withOpacity(0.5), width: 1),
-                          ),
-                          child: Center(
-                            child: Container(
-                              width: 4,
-                              height: 4,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      
+                    children: [                      
                       const SizedBox(height: 40),
                       
                       // Introduction with waving hand
                       Row(
                         children: [
                           Image.asset(
-                            'assets/images/waving_hand.png',
+                            'assets/images/wave_hand.gif',
                             height: 50,
                           ),
                           const SizedBox(width: 10),
                           const Text(
-                            "I'm Sugith",
+                            "I'm Tamanna",
                             style: TextStyle(
                               fontSize: 48,
                               fontWeight: FontWeight.bold,
@@ -93,7 +66,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           children: [
                             TextSpan(
-                              text: 'Flutter Developer ',
+                              text: 'Web Developer ',
                               style: TextStyle(
                                 color: Color(0xFF8E9BBA),
                               ),
@@ -140,7 +113,7 @@ class HomeScreen extends StatelessWidget {
                       Row(
                         children: [
                           SocialButton(
-                            label: 'Connect Me',
+                            label: 'Connect with me',
                             icon: Icons.mail_outline,
                             onPressed: () {},
                             isPrimary: true,
@@ -155,30 +128,10 @@ class HomeScreen extends StatelessWidget {
                             icon: FontAwesomeIcons.linkedin,
                             onPressed: () {},
                           ),
-                          const SizedBox(width: 10),
-                          SocialIconButton(
-                            icon: FontAwesomeIcons.medium,
-                            onPressed: () {},
-                          ),
-                          const SizedBox(width: 10),
-                          SocialIconButton(
-                            icon: FontAwesomeIcons.googlePlay,
-                            onPressed: () {},
-                          ),
                         ],
                       ),
                     ],
                   ),
-                ),
-              ),
-              
-              // Bird character
-              Positioned(
-                right: 20,
-                bottom: 100,
-                child: Image.asset(
-                  'assets/images/bird_character.png',
-                  height: 200,
                 ),
               ),
             ],
@@ -241,7 +194,7 @@ class PhoneMockup extends StatelessWidget {
           ),
         ],
         image: const DecorationImage(
-          image: AssetImage('assets/images/stars_bg.png'),
+          image: AssetImage('assets/images/bg.jpeg'),
           fit: BoxFit.cover,
         ),
       ),
@@ -273,16 +226,9 @@ class PhoneMockup extends StatelessWidget {
                   AppIcon(icon: 'assets/icons/tools.png', label: 'Tools'),
                   AppIcon(icon: 'assets/icons/github.png', label: 'GitHub'),
                   AppIcon(icon: 'assets/icons/experience.png', label: 'Experience'),
-                  AppIcon(icon: 'assets/icons/playstore.png', label: 'Play Store'),
-                  AppIcon(icon: 'assets/icons/linkedin.png', label: 'LinkedIn'),
-                  AppIcon(icon: 'assets/icons/x.png', label: 'X'),
-                  AppIcon(icon: 'assets/icons/whatsapp.png', label: 'WhatsApp'),
+                  AppIcon(icon: 'assets/icons/linkedin.webp', label: 'LinkedIn'),
+                  AppIcon(icon: 'assets/icons/x.webp', label: 'X'),
                   AppIcon(icon: 'assets/icons/telegram.png', label: 'Telegram'),
-                  AppIcon(icon: 'assets/icons/medium.png', label: 'Medium'),
-                  AppIcon(icon: 'assets/icons/youtube.png', label: 'Youtube'),
-                  AppIcon(icon: 'assets/icons/password.png', label: 'Password'),
-                  AppIcon(icon: 'assets/icons/tictactoe.png', label: 'Tic Tac Toe'),
-                  AppIcon(icon: 'assets/icons/apple.png', label: 'Device'),
                 ],
               ),
             ),
@@ -301,7 +247,7 @@ class PhoneMockup extends StatelessWidget {
                     fontSize: 12,
                   ),
                 ),
-                Image.asset('assets/icons/flutter_logo.png', height: 16),
+                Image.asset('assets/icons/flutter.jpg', height: 16),
                 const Text(
                   ' Using ',
                   style: TextStyle(
